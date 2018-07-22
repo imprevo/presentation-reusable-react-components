@@ -15,7 +15,7 @@ import {
   List,
   Quote,
   Slide,
-  Text
+  Text,
 } from 'spectacle';
 import createTheme from 'spectacle/lib/themes/default';
 
@@ -29,8 +29,8 @@ const theme = createTheme(
     secondary: {
       name: 'Droid Serif',
       googleFont: true,
-      styles: ['400', '700i']
-    }
+      styles: ['400', '700i'],
+    },
   }
 );
 
