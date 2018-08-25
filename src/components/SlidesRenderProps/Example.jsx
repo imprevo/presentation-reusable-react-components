@@ -1,22 +1,17 @@
 /* eslint-disable import/no-webpack-loader-syntax */
 import React from 'react';
-import { Text, Layout, Fill } from 'spectacle';
-import { CodePane } from '../CodePane';
+import { Text } from 'spectacle';
+import { CodePaneColumns } from '../CodePaneColumns';
 import sourceCounter from '!raw-loader!./samples/Counter';
 import sourceContainers from '!raw-loader!./samples/Containers';
+
+const sourceList = [sourceCounter, sourceContainers];
 
 const Example = () => {
   return (
     <React.Fragment>
       <Text>Пример</Text>
-      <Layout>
-        <Fill>
-          <CodePane source={sourceCounter} />
-        </Fill>
-        <Fill>
-          <CodePane source={sourceContainers} />
-        </Fill>
-      </Layout>
+      <CodePaneColumns sourceList={sourceList} />
     </React.Fragment>
   );
 };
