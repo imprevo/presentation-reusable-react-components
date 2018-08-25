@@ -1,8 +1,11 @@
 {
-  "name": "react-hoc-slides",
+  "name": "presentation-reusable-react-components",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://imprevo.github.io/presentation-reusable-react-components",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "precommit": "lint-staged",
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -15,6 +18,7 @@
     ]
   },
   "dependencies": {
+    "gh-pages": "^1.2.0",
     "prism-themes": "^1.0.1",
     "raw-loader": "^0.5.1",
     "react": "^16.4.1",
