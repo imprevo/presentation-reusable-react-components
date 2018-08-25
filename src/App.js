@@ -1,28 +1,20 @@
 import React, { Component } from 'react';
-import {
-  Appear,
-  BlockQuote,
-  Cite,
-  CodePane,
-  Code,
-  Deck,
-  Fill,
-  Fit,
-  Heading,
-  Image,
-  Layout,
-  ListItem,
-  List,
-  Quote,
-  Slide,
-  Text,
-} from 'spectacle';
+import { Deck, Slide } from 'spectacle';
 import createTheme from 'spectacle/lib/themes/default';
+import SlidesMain from './components/SlidesMain';
+import SlidesCopyPaste from './components/SlidesCopyPaste';
+import SlidesSlot from './components/SlidesSlot';
+import SlidesInheritance from './components/SlidesInheritance';
+import SlidesHoc from './components/SlidesHoc';
+import SlidesRenderProps from './components/SlidesRenderProps';
+import SlidesFinal from './components/SlidesFinal';
 
 const theme = createTheme(
   {
-    // primary: 'red',
-    // secondary: 'blue'
+    // primary: 'lightyellow',
+    // secondary: 'red',
+    // tertiary: 'black',
+    // quarternary: 'hotpink',
   },
   {
     primary: 'Helvetica',
@@ -34,16 +26,27 @@ const theme = createTheme(
   }
 );
 
+// TODO: ошибка, если обернуть Slide в React.Fragment или другой компонент
+// TypeError: Cannot read property 'componentWillAppear' of undefined
+function renderSlides(slides) {
+  return slides.map((A, key) => (
+    <Slide key={key}>
+      <A />
+    </Slide>
+  ));
+}
+
 class App extends Component {
   render() {
     return (
-      <Deck theme={theme}>
-        <Slide>
-          <Text>Hello 1</Text>
-        </Slide>
-        <Slide>
-          <Text>Hello 2</Text>
-        </Slide>
+      <Deck transition={['slide']} theme={theme} transitionDuration={500}>
+        {renderSlides(SlidesMain)}
+        {renderSlides(SlidesCopyPaste)}
+        {renderSlides(SlidesInheritance)}
+        {renderSlides(SlidesSlot)}
+        {renderSlides(SlidesHoc)}
+        {renderSlides(SlidesRenderProps)}
+        {renderSlides(SlidesFinal)}
       </Deck>
     );
   }

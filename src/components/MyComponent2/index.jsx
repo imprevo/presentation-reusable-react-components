@@ -1,20 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const MyComponent2 = ({ counter, onIncrease, onDecrease }) => {
-  return (
-    <div className="my-component-2">
-      <button onClick={onIncrease}>+</button>
-      {counter}
-      <button onClick={onDecrease}>-</button>
-    </div>
-  );
-};
-
-MyComponent2.propTypes = {
-  counter: PropTypes.number,
-  onIncrease: PropTypes.func,
-  onDecrease: PropTypes.func,
-};
+class MyComponent2 extends React.Component {
+  static propTypes = {
+    counter: PropTypes.number,
+    onIncrease: PropTypes.func,
+    onDecrease: PropTypes.func,
+  };
+  render() {
+    const { counter, onIncrease, onDecrease } = this.props;
+    return (
+      <div className="my-component-2">
+        <button onClick={onDecrease}>-</button>
+        {counter}
+        <button onClick={onIncrease}>+</button>
+      </div>
+    );
+  }
+}
 
 export { MyComponent2 };
