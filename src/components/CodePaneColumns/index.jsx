@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import { Layout, Fill } from 'spectacle';
 import { CodePane } from '../CodePane';
 
-const CodePaneColumns = ({ sourceList }) => {
+const CodePaneColumns = ({ list }) => {
   return (
     <Layout>
-      {sourceList.map((source, index) => (
+      {list.map((source, index) => (
         <Fill key={index}>
           <CodePane source={source} />
         </Fill>
@@ -16,7 +16,7 @@ const CodePaneColumns = ({ sourceList }) => {
 };
 
 CodePaneColumns.propTypes = {
-  sourceList: PropTypes.arrayOf(PropTypes.string),
+  list: PropTypes.arrayOf(PropTypes.string),
 };
 
 export { CodePaneColumns };

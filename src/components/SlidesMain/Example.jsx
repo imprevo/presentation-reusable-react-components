@@ -11,7 +11,7 @@ const Example = () => {
   return (
     <React.Fragment>
       <Text>Пример</Text>
-      <CodePaneColumns sourceList={sourceList} />
+      <CodePaneColumns list={sourceList} />
     </React.Fragment>
   );
 };

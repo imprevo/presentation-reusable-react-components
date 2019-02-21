@@ -10,8 +10,8 @@ const sourceList = [sourceContainer1, sourceContainer2];
 const Example = () => {
   return (
     <React.Fragment>
-      <Text>Пример</Text>
-      <CodePaneColumns sourceList={sourceList} />
+      <Text>Код</Text>
+      <CodePaneColumns list={sourceList} />
     </React.Fragment>
   );
 };
