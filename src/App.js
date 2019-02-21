@@ -8,6 +8,7 @@ import SlidesInheritance from './components/SlidesInheritance';
 import SlidesHoc from './components/SlidesHoc';
 import SlidesRenderProps from './components/SlidesRenderProps';
 import SlidesFinal from './components/SlidesFinal';
+import SlidesHocAdvanced from './components/SlidesHocAdvanced';
 
 const theme = createTheme(
   {
@@ -41,11 +42,15 @@ class App extends Component {
     return (
       <Deck transition={['slide']} theme={theme} transitionDuration={500}>
         {renderSlides(SlidesMain)}
+
         {renderSlides(SlidesCopyPaste)}
         {renderSlides(SlidesInheritance)}
         {renderSlides(SlidesSlot)}
         {renderSlides(SlidesHoc)}
         {renderSlides(SlidesRenderProps)}
+
+        {renderSlides(SlidesHocAdvanced)}
+
         {renderSlides(SlidesFinal)}
       </Deck>
     );
