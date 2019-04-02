@@ -25,3 +25,26 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
+
+## план
+
+переиспользование UI
+-copy+paste
+-наследование
+-композиция
+-слоты
+
+переиспользование логики
+-copy+paste
+-наследование
+-хоки
+-renderprops
+
+собираем вместе. примеры
+-наследование, когда плохо
+--счетчик + загрузка данных + синхронизация инпута между вкладками
+-загрузка нескольких данных перед отображением
+--hoc
+--render props
+-форма на основе конфига
+-из hoc в render props и обратно

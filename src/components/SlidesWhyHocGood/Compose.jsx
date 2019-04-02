@@ -7,8 +7,8 @@ const Compose = () => {
       <Heading>compose</Heading>
       <List>
         <ListItem>compose из redux</ListItem>
-        <ListItem>react-compose</ListItem>
-        <ListItem>proposal-pipeline-operator</ListItem>
+        <ListItem>compose из lodash (a.k.a. flowRight)</ListItem>
+        <ListItem>recompose (deprecated)</ListItem>
       </List>
     </div>
   );

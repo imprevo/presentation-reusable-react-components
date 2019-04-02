@@ -5,7 +5,7 @@ const Title = () => {
   return (
     <div>
       <Heading size={1} caps>
-        HOC
+        Почему наследование это плохо
       </Heading>
     </div>
   );

@@ -11,7 +11,8 @@ const PronsAndCons = () => {
       </List>
       <Text>минусы</Text>
       <List>
-        <ListItem>неочевидно, какие методы и свойства</ListItem>
+        <ListItem>неочевидно, какие есть методы и свойства</ListItem>
+        <ListItem>невозможно использовать функциональные компоненты</ListItem>
         <ListItem>плохо расширяются</ListItem>
       </List>
       <Image src={img} alt="Banana Gorilla Jungle" width={200} />

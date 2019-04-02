@@ -8,7 +8,8 @@ import SlidesInheritance from './components/SlidesInheritance';
 import SlidesHoc from './components/SlidesHoc';
 import SlidesRenderProps from './components/SlidesRenderProps';
 import SlidesFinal from './components/SlidesFinal';
-import SlidesHocAdvanced from './components/SlidesHocAdvanced';
+import SlidesWhyInheritanceBad from './components/SlidesWhyInheritanceBad';
+import SlidesWhyHocGood from './components/SlidesWhyHocGood';
 
 const theme = createTheme(
   {
@@ -49,7 +50,8 @@ class App extends Component {
         {renderSlides(SlidesHoc)}
         {renderSlides(SlidesRenderProps)}
 
-        {renderSlides(SlidesHocAdvanced)}
+        {renderSlides(SlidesWhyInheritanceBad)}
+        {renderSlides(SlidesWhyHocGood)}
 
         {renderSlides(SlidesFinal)}
       </Deck>
