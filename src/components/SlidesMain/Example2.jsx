@@ -7,7 +7,7 @@ import sourceContainer2 from '!raw-loader!./samples/Container2';
 
 const sourceList = [sourceContainer1, sourceContainer2];
 
-const Example = () => {
+const Example2 = () => {
   return (
     <React.Fragment>
       <Text>Код</Text>
@@ -16,4 +16,4 @@ const Example = () => {
   );
 };
 
-export { Example };
+export { Example2 };

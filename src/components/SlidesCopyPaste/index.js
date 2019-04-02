@@ -1,6 +1,4 @@
 import { Title } from './Title';
 import { Solution } from './Solution';
-import { Example } from './Example';
-import { Demo } from './Demo';
 
-export default [Title, Example, Demo, Solution];
+export default [Title, Solution];

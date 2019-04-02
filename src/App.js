@@ -3,7 +3,7 @@ import { Deck, Slide } from 'spectacle';
 import createTheme from 'spectacle/lib/themes/default';
 import SlidesMain from './components/SlidesMain';
 import SlidesCopyPaste from './components/SlidesCopyPaste';
-import SlidesSlot from './components/SlidesSlot';
+// import SlidesSlot from './components/SlidesSlot';
 import SlidesInheritance from './components/SlidesInheritance';
 import SlidesHoc from './components/SlidesHoc';
 import SlidesRenderProps from './components/SlidesRenderProps';
@@ -46,7 +46,7 @@ class App extends Component {
 
         {renderSlides(SlidesCopyPaste)}
         {renderSlides(SlidesInheritance)}
-        {renderSlides(SlidesSlot)}
+        {/* {renderSlides(SlidesSlot)} */}
         {renderSlides(SlidesHoc)}
         {renderSlides(SlidesRenderProps)}
 

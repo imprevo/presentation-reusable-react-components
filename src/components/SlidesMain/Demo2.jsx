@@ -9,7 +9,7 @@ const list = [
   { title: 'Container2', body: <Container2 /> },
 ];
 
-const Demo = () => {
+const Demo2 = () => {
   return (
     <React.Fragment>
       <Text>Пример</Text>
@@ -18,4 +18,4 @@ const Demo = () => {
   );
 };
 
-export { Demo };
+export { Demo2 };

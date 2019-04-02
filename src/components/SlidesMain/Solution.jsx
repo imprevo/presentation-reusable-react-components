@@ -8,9 +8,8 @@ const Solution = () => {
       <List>
         <ListItem>Копипаста</ListItem>
         <ListItem>Наследование</ListItem>
-        <ListItem>Слоты</ListItem>
-        <ListItem>Компоненты высшего порядка (HoC)</ListItem>
-        <ListItem>render props</ListItem>
+        <ListItem>Higher-Order Components (HoC)</ListItem>
+        <ListItem>Render props</ListItem>
       </List>
     </div>
   );

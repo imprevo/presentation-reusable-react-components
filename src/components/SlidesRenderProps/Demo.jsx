@@ -1,7 +1,6 @@
 import React from 'react';
 import { Text } from 'spectacle';
-import { Container1 } from './samples/Container1';
-import { Container2 } from './samples/Container2';
+import { Container1, Container2 } from './samples/Containers';
 import { Columns } from '../Columns';
 
 const list = [
