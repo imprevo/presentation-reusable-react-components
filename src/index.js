@@ -3,4 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+function renderApp() {
+  ReactDOM.render(<App />, document.getElementById('root'));
+}
+
+renderApp();
+
+if (module.hot) {
+  module.hot.accept('./App', function() {
+    renderApp();
+  });
+}
