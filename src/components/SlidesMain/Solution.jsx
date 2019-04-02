@@ -4,7 +4,7 @@ import { Text, List, ListItem } from 'spectacle';
 const Solution = () => {
   return (
     <div>
-      <Text>варианты решения</Text>
+      <Text>Варианты решения</Text>
       <List>
         <ListItem>Копипаста</ListItem>
         <ListItem>Наследование</ListItem>

@@ -10,7 +10,7 @@ const sourceList = [sourceFetchContainer, sourceContainers];
 const Example1 = () => {
   return (
     <React.Fragment>
-      <Text>Код</Text>
+      <Text>Загрузка данных</Text>
       <CodePaneColumns list={sourceList} />
     </React.Fragment>
   );

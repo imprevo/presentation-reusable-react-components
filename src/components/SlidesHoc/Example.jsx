@@ -10,7 +10,7 @@ const sourceList = [sourceHoc, sourceContainers];
 const Example = () => {
   return (
     <React.Fragment>
-      <Text>Код</Text>
+      <Text>Обертка над компонентом</Text>
       <CodePaneColumns list={sourceList} />
     </React.Fragment>
   );

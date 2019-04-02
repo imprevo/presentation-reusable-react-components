@@ -4,19 +4,19 @@ import { Text, List, ListItem } from 'spectacle';
 const PronsAndCons = () => {
   return (
     <div>
-      <Text>плюсы</Text>
+      <Text>Плюсы</Text>
       <List>
-        <ListItem>инкапсуляция логики</ListItem>
-        <ListItem>нет коллизии props</ListItem>
-        <ListItem>легче типизировать</ListItem>
+        <ListItem>Инкапсуляция логики</ListItem>
+        <ListItem>Нет коллизии props</ListItem>
+        <ListItem>Легче типизировать</ListItem>
       </List>
-      <Text>минусы</Text>
+      <Text>Минусы</Text>
       <List>
         <ListItem>
-          для использования LifeCycle методов нужен дополнительный компонент
+          Для использования LifeCycle методов нужен дополнительный компонент
         </ListItem>
-        <ListItem>на каждый render создается новая функция</ListItem>
-        <ListItem>callback hell</ListItem>
+        <ListItem>На каждый render создается новая функция</ListItem>
+        <ListItem>Callback Hell</ListItem>
       </List>
     </div>
   );

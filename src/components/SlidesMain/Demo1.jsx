@@ -1,5 +1,4 @@
 import React from 'react';
-import { Text } from 'spectacle';
 import { MyComponent1 } from '../MyComponent1';
 import { MyComponent2 } from '../MyComponent2';
 import { Columns } from '../Columns';
@@ -9,13 +8,6 @@ const list = [
   { title: 'MyComponent2', body: <MyComponent2 counter={0} /> },
 ];
 
-const Demo1 = () => {
-  return (
-    <React.Fragment>
-      <Text>Пример</Text>
-      <Columns list={list} />
-    </React.Fragment>
-  );
-};
+const Demo1 = () => <Columns list={list} />;
 
 export { Demo1 };

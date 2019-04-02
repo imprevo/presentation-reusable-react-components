@@ -49,3 +49,4 @@ Your app is ready to be deployed!
   - render props
 - форма на основе конфига
 - из hoc в render props и обратно
+- вывод - что и когда применять

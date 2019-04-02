@@ -5,15 +5,15 @@ import img from './assets/bgjp.png';
 const PronsAndCons = () => {
   return (
     <div>
-      <Text>плюсы</Text>
+      <Text>Плюсы</Text>
       <List>
-        <ListItem>просто</ListItem>
+        <ListItem>Просто</ListItem>
       </List>
-      <Text>минусы</Text>
+      <Text>Минусы</Text>
       <List>
-        <ListItem>неочевидно, какие есть методы и свойства</ListItem>
-        <ListItem>невозможно использовать функциональные компоненты</ListItem>
-        <ListItem>плохо расширяются</ListItem>
+        <ListItem>Неочевидно, какие есть методы и свойства</ListItem>
+        <ListItem>Невозможно использовать функциональные компоненты</ListItem>
+        <ListItem>Плохо расширяются</ListItem>
       </List>
       <Image src={img} alt="Banana Gorilla Jungle" width={200} />
     </div>

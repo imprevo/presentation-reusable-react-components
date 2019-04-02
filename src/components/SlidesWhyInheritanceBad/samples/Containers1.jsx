@@ -10,7 +10,7 @@ class Container extends FetchContainer {
     if (loading) return 'loading...';
     return (
       <div>
-        {data}
+        {data ? data : 'no data'}
         <button onClick={this.loadData}>reload</button>
       </div>
     );
