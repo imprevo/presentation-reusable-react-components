@@ -2,18 +2,17 @@
 import React from 'react';
 import { Text } from 'spectacle';
 import { CodePaneColumns } from '../CodePaneColumns';
-import sourceHoc from '!raw-loader!./samples/withCounter';
-import sourceContainers from '!raw-loader!./samples/Containers';
+import sourceCurry from '!raw-loader!./samples/curry';
 
-const sourceList = [sourceHoc, sourceContainers];
+const sourceList = [sourceCurry];
 
-const Example = () => {
+const ExampleCurry = () => {
   return (
     <React.Fragment>
-      <Text>Higher-order Component</Text>
+      <Text>Каррирование (currying)</Text>
       <CodePaneColumns list={sourceList} />
     </React.Fragment>
   );
 };
 
-export { Example };
+export { ExampleCurry };

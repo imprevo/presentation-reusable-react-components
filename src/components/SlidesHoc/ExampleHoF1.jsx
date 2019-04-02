@@ -2,18 +2,17 @@
 import React from 'react';
 import { Text } from 'spectacle';
 import { CodePaneColumns } from '../CodePaneColumns';
-import sourceHoc from '!raw-loader!./samples/withCounter';
-import sourceContainers from '!raw-loader!./samples/Containers';
+import sourceHoF from '!raw-loader!./samples/hof1';
 
-const sourceList = [sourceHoc, sourceContainers];
+const sourceList = [sourceHoF];
 
-const Example = () => {
+const ExampleHoF1 = () => {
   return (
     <React.Fragment>
-      <Text>Higher-order Component</Text>
+      <Text>Higher-order Function</Text>
       <CodePaneColumns list={sourceList} />
     </React.Fragment>
   );
 };
 
-export { Example };
+export { ExampleHoF1 };
