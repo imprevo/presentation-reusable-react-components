@@ -8,7 +8,9 @@ const Compose = () => {
       <List>
         <ListItem>compose из redux</ListItem>
         <ListItem>compose из lodash (a.k.a. flowRight)</ListItem>
-        <ListItem>recompose (deprecated)</ListItem>
+        <ListItem>
+          <s>recompose</s> (deprecated)
+        </ListItem>
       </List>
     </div>
   );

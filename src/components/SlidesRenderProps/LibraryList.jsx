@@ -4,7 +4,7 @@ import { Heading, List, ListItem } from 'spectacle';
 const LibraryList = () => {
   return (
     <div>
-      <Heading>библиотеки</Heading>
+      <Heading>Библиотеки</Heading>
       <List>
         <ListItem>react-router</ListItem>
         <ListItem>React context API</ListItem>

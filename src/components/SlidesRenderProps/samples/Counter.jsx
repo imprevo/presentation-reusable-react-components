@@ -1,10 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 class Counter extends React.Component {
-  static propTypes = {
-    children: PropTypes.func,
-  };
   state = {
     counter: 0,
   };
