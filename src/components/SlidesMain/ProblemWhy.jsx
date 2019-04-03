@@ -1,13 +1,15 @@
 import React from 'react';
-import { Text, Heading } from 'spectacle';
+import { Heading } from 'spectacle';
+import dryBg from './assets/dry.png';
 
 const ProblemWhy = () => {
   return (
-    <React.Fragment>
-      <Heading>DRY</Heading>
-      <Text>(Don't repeat yourself)</Text>
-    </React.Fragment>
+    <Heading size={1} caps>
+      DRY
+    </Heading>
   );
 };
+
+ProblemWhy.bgImage = dryBg;
 
 export { ProblemWhy };

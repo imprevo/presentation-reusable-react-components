@@ -32,7 +32,7 @@ const theme = createTheme(
 // TypeError: Cannot read property 'componentWillAppear' of undefined
 function renderSlides(slides) {
   return slides.map((A, key) => (
-    <Slide key={key}>
+    <Slide key={key} bgImage={A.bgImage}>
       <A />
     </Slide>
   ));
