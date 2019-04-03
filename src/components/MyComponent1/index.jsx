@@ -13,8 +13,8 @@ class MyComponent1 extends React.Component {
     return (
       <div className="my-component-1">
         <div>Counter: {counter}</div>
-        <button onClick={onIncrease}>Increase</button>
-        <button onClick={onDecrease}>Decrease</button>
+        {counter > -5 && <button onClick={onDecrease}>Decrease</button>}
+        {counter < 5 && <button onClick={onIncrease}>Increase</button>}
       </div>
     );
   }
