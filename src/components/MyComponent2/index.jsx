@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './style.css';
 
 class MyComponent2 extends React.Component {
   static propTypes = {
@@ -12,7 +13,9 @@ class MyComponent2 extends React.Component {
     return (
       <div className="my-component-2">
         <button onClick={onDecrease}>-</button>
-        {counter}
+        <span className={`counter ${counter % 2 ? 'odd' : 'even'}`}>
+          {counter}
+        </span>
         <button onClick={onIncrease}>+</button>
       </div>
     );

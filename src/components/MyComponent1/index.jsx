@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './style.css';
 
 class MyComponent1 extends React.Component {
   static propTypes = {
@@ -11,7 +12,7 @@ class MyComponent1 extends React.Component {
     const { counter, onIncrease, onDecrease } = this.props;
     return (
       <div className="my-component-1">
-        Counter: {counter}
+        <div>Counter: {counter}</div>
         <button onClick={onIncrease}>Increase</button>
         <button onClick={onDecrease}>Decrease</button>
       </div>
