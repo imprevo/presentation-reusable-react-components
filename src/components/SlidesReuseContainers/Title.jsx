@@ -5,7 +5,7 @@ const Title = () => {
   return (
     <div>
       <Heading size={2} caps textColor="tertiary">
-        Компоненты
+        Контейнеры
       </Heading>
     </div>
   );

@@ -1,14 +1,14 @@
 import React from 'react';
-import { Text, Heading } from 'spectacle';
+import { Text, List, ListItem } from 'spectacle';
 
 const Problem = () => {
   return (
     <React.Fragment>
-      <Heading>Проблема</Heading>
-      <Text>Presentation component - отображение, можно переиспользовать.</Text>
-      <Text>
-        Container component - логика и данные, нельзя переиспользовать.
-      </Text>
+      <Text>2 вида компонентов</Text>
+      <List>
+        <ListItem>Presentation component - отображение.</ListItem>
+        <ListItem>Container component - логика и данные</ListItem>
+      </List>
     </React.Fragment>
   );
 };

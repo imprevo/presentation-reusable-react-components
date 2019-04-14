@@ -10,7 +10,7 @@ const sourceList = [sourceComponent1, sourceComponent2];
 const Example1 = () => {
   return (
     <React.Fragment>
-      <Text>Presentation components</Text>
+      <Text>2 разных компонента</Text>
       <CodePaneColumns list={sourceList} />
     </React.Fragment>
   );
