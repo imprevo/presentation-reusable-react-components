@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Deck, Slide } from 'spectacle';
 import createTheme from 'spectacle/lib/themes/default';
 import SlidesMain from './components/SlidesMain';
+import SlidesReuseComponents from './components/SlidesReuseComponents';
 import SlidesCopyPaste from './components/SlidesCopyPaste';
 // import SlidesSlot from './components/SlidesSlot';
 import SlidesInheritance from './components/SlidesInheritance';
@@ -43,6 +44,7 @@ class App extends Component {
     return (
       <Deck transition={['slide']} theme={theme} transitionDuration={500}>
         {renderSlides(SlidesMain)}
+        {renderSlides(SlidesReuseComponents)}
 
         {renderSlides(SlidesCopyPaste)}
         {renderSlides(SlidesInheritance)}

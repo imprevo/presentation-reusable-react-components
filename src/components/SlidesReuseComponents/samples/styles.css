@@ -1,0 +1,21 @@
+.form-field {
+  margin: 10px 0 15px;
+}
+
+.form-field label {
+  display: block;
+  margin: 10px 0;
+}
+
+.form-field input,
+.form-field textarea,
+.form-field select {
+  display: block;
+  width: 100%;
+}
+
+.form-field p {
+  margin: 10px 0;
+  font-size: 0.6em;
+  color: #f00;
+}
