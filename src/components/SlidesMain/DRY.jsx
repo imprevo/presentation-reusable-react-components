@@ -1,12 +1,15 @@
 import React from 'react';
 import { Heading } from 'spectacle';
+import dryBg from './assets/dry.png';
 
-const SOLID = () => {
+const DRY = () => {
   return (
     <Heading size={1} caps>
-      <u>S</u>OLID
+      DRY
     </Heading>
   );
 };
 
-export { SOLID };
+DRY.bgImage = dryBg;
+
+export { DRY };

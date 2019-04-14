@@ -2,15 +2,14 @@
 import React from 'react';
 import { Text } from 'spectacle';
 import { CodePaneColumns } from '../CodePaneColumns';
-import sourceComponent1 from '!raw-loader!./samples/Component1';
-import sourceComponent2 from '!raw-loader!./samples/Component2';
+import sourceComponent from '!raw-loader!./samples/Component1';
 
-const sourceList = [sourceComponent1, sourceComponent2];
+const sourceList = [sourceComponent];
 
 const Example1 = () => {
   return (
     <React.Fragment>
-      <Text>Композиция декораторов</Text>
+      <Text>Композиция</Text>
       <CodePaneColumns list={sourceList} />
     </React.Fragment>
   );

@@ -8,7 +8,7 @@ const PronsAndCons = () => {
       <List>
         <ListItem>Инкапсуляция логики</ListItem>
         <ListItem>Нет коллизии props</ListItem>
-        <ListItem>Легче типизировать</ListItem>
+        <ListItem>Легко типизировать</ListItem>
       </List>
       <Text>Минусы</Text>
       <List>

@@ -1,15 +1,14 @@
 import React from 'react';
-import { Heading } from 'spectacle';
-import dryBg from './assets/dry.png';
+import { List, ListItem } from 'spectacle';
 
 const ProblemWhy = () => {
   return (
-    <Heading size={1} caps>
-      DRY
-    </Heading>
+    <List>
+      <ListItem>Проще переиспользовать и комбинировать</ListItem>
+      <ListItem>Проще поддерживать</ListItem>
+      <ListItem>Оптимизирует рендера</ListItem>
+    </List>
   );
 };
-
-ProblemWhy.bgImage = dryBg;
 
 export { ProblemWhy };

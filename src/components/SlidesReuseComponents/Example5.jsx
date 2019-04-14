@@ -10,7 +10,7 @@ const sourceList = [sourceFormField, sourceFormFields];
 const Example5 = () => {
   return (
     <React.Fragment>
-      <Text>v5</Text>
+      <Text>Разделим форму и компоненты</Text>
       <CodePaneColumns list={sourceList} />
     </React.Fragment>
   );

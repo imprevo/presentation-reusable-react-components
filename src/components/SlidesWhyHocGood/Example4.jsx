@@ -2,11 +2,11 @@
 import React from 'react';
 import { Text } from 'spectacle';
 import { CodePaneColumns } from '../CodePaneColumns';
-import sourceComponent3 from '!raw-loader!./samples/Component3';
+import sourceComponent3 from '!raw-loader!./samples/Component5';
 
 const sourceList = [sourceComponent3];
 
-const Example2 = () => {
+const Example4 = () => {
   return (
     <React.Fragment>
       <Text>Композиция декорируемых декораторов</Text>
@@ -15,4 +15,4 @@ const Example2 = () => {
   );
 };
 
-export { Example2 };
+export { Example4 };

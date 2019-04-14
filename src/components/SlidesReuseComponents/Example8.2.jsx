@@ -9,7 +9,7 @@ const sourceList = [sourceFormFields];
 const Example8_2 = () => {
   return (
     <React.Fragment>
-      <Text>v8</Text>
+      <Text>Та-да!</Text>
       <CodePaneColumns list={sourceList} />
     </React.Fragment>
   );

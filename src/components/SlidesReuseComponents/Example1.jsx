@@ -9,7 +9,7 @@ const sourceList = [source];
 const Example1 = () => {
   return (
     <React.Fragment>
-      <Text>v1</Text>
+      <Text>Форма</Text>
       <CodePaneColumns list={sourceList} />
     </React.Fragment>
   );

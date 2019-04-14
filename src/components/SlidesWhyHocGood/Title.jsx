@@ -5,7 +5,7 @@ const Title = () => {
   return (
     <div>
       <Heading size={1} caps>
-        Кто кого?
+        Когда HoC это хорошо
       </Heading>
     </div>
   );

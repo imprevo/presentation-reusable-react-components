@@ -10,7 +10,7 @@ const sourceList = [sourceCounter, sourceContainers];
 const Example = () => {
   return (
     <React.Fragment>
-      <Text>Код</Text>
+      <Text>Передача функции в children</Text>
       <CodePaneColumns list={sourceList} />
     </React.Fragment>
   );

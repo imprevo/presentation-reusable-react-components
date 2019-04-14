@@ -2,14 +2,15 @@
 import React from 'react';
 import { Text } from 'spectacle';
 import { CodePaneColumns } from '../CodePaneColumns';
-import source from '!raw-loader!./samples/FormFields3';
+import sourceComponent1 from '!raw-loader!./samples/Component3';
+import sourceComponent2 from '!raw-loader!./samples/Component4';
 
-const sourceList = [source];
+const sourceList = [sourceComponent1, sourceComponent2];
 
 const Example3 = () => {
   return (
     <React.Fragment>
-      <Text>Добавим textarea</Text>
+      <Text>Композиция декораторов</Text>
       <CodePaneColumns list={sourceList} />
     </React.Fragment>
   );
