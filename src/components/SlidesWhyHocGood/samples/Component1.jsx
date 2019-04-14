@@ -1,6 +1,5 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { withRoles, withUserList, injectIntl } from './hocs';
+import { withRoles, withUserList } from './hocs';
 
 class MyComponent extends React.Component {}
 

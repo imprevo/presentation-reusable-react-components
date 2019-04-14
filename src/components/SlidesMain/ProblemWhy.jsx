@@ -6,7 +6,7 @@ const ProblemWhy = () => {
     <List>
       <ListItem>Проще переиспользовать и комбинировать</ListItem>
       <ListItem>Проще поддерживать</ListItem>
-      <ListItem>Оптимизирует рендера</ListItem>
+      <ListItem>Оптимизация рендера</ListItem>
     </List>
   );
 };
