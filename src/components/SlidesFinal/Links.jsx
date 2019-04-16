@@ -27,6 +27,9 @@ const Links = () => {
           <CustomLink href="https://habr.com/ru/post/309422" />
         </ListItem>
         <ListItem>
+          <CustomLink href="https://habr.com/ru/post/354768" />
+        </ListItem>
+        <ListItem>
           <CustomLink href="https://youtu.be/YaZg8wg39QQ">
             https://youtu.be/YaZg8wg39QQ - React Component Patterns [EN]
           </CustomLink>

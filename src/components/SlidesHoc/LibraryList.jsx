@@ -10,6 +10,7 @@ const LibraryList = () => {
         <ListItem>injectIntl из react-intl</ListItem>
         <ListItem>loadable из react-loadable</ListItem>
         <ListItem>reduxForm из redux-form</ListItem>
+        <ListItem>withState, branch, lifecycle из recompose</ListItem>
         <ListItem>
           SortableContainer, SortableElement из react-sortable-hoc
         </ListItem>
