@@ -46,7 +46,12 @@ function renderSlides(slides) {
 class App extends Component {
   render() {
     return (
-      <Deck transition={['slide']} theme={theme} transitionDuration={500}>
+      <Deck
+        transition={['slide']}
+        theme={theme}
+        transitionDuration={500}
+        progress="bar"
+      >
         {renderSlides(SlidesMain)}
 
         {renderSlides(SlidesReuseComponents)}
