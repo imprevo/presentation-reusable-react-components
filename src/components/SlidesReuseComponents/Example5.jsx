@@ -1,6 +1,6 @@
 /* eslint-disable import/no-webpack-loader-syntax */
 import React from 'react';
-import { Text } from 'spectacle';
+import { Text, Slide } from 'spectacle';
 import { CodePaneColumns } from '../CodePaneColumns';
 import sourceFormFields from '!raw-loader!./samples/FormFields5';
 import sourceFormField from '!raw-loader!./samples/FormFields5/FormField';
@@ -9,10 +9,10 @@ const sourceList = [sourceFormField, sourceFormFields];
 
 const Example5 = () => {
   return (
-    <React.Fragment>
+    <Slide>
       <Text>Разделим форму и компоненты</Text>
       <CodePaneColumns list={sourceList} />
-    </React.Fragment>
+    </Slide>
   );
 };
 

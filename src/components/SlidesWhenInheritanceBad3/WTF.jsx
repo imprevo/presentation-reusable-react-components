@@ -1,12 +1,12 @@
 import React from 'react';
-import { Image } from 'spectacle';
+import { Image, Slide } from 'spectacle';
 import img from './assets/wtf.jpg';
 
 const WTF = () => {
   return (
-    <div>
+    <Slide>
       <Image src={img} alt="WTF" />
-    </div>
+    </Slide>
   );
 };
 

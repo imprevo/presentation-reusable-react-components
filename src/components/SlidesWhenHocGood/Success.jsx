@@ -1,9 +1,11 @@
 import React from 'react';
-import { Image } from 'spectacle';
+import { Image, Slide } from 'spectacle';
 import img from './assets/success.gif';
 
-const Success = () => <Image width="100%" src={img} alt="Success" />;
-
-Success.bgColor = '#f5e10e';
+const Success = () => (
+  <Slide bgColor="#f5e10e">
+    <Image width="100%" src={img} alt="Success" />
+  </Slide>
+);
 
 export { Success };

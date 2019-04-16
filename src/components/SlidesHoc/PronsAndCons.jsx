@@ -1,9 +1,9 @@
 import React from 'react';
-import { Appear, Text, List, ListItem } from 'spectacle';
+import { Appear, Text, List, ListItem, Slide } from 'spectacle';
 
-const PronsAndCons = () => {
+const PronsAndCons = (props) => {
   return (
-    <div>
+    <Slide {...props}>
       <Text>Плюсы</Text>
       <List>
         <ListItem>Инкапсуляция логики</ListItem>
@@ -22,7 +22,7 @@ const PronsAndCons = () => {
           </List>
         </div>
       </Appear>
-    </div>
+    </Slide>
   );
 };
 

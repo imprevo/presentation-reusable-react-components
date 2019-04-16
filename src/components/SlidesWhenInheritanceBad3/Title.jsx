@@ -1,13 +1,13 @@
 import React from 'react';
-import { Heading } from 'spectacle';
+import { Heading, Slide } from 'spectacle';
 
 const Title = () => {
   return (
-    <div>
+    <Slide>
       <Heading size={1} caps>
         Когда наследование это плохо [3]
       </Heading>
-    </div>
+    </Slide>
   );
 };
 

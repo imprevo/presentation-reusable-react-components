@@ -1,6 +1,6 @@
 /* eslint-disable import/no-webpack-loader-syntax */
 import React from 'react';
-import { Text } from 'spectacle';
+import { Text, Slide } from 'spectacle';
 import { CodePaneColumns } from '../CodePaneColumns';
 import sourceHoF from '!raw-loader!./samples/hof2';
 
@@ -8,10 +8,10 @@ const sourceList = [sourceHoF];
 
 const ExampleHoF2 = () => {
   return (
-    <React.Fragment>
+    <Slide>
       <Text>Соединяем</Text>
       <CodePaneColumns list={sourceList} />
-    </React.Fragment>
+    </Slide>
   );
 };
 

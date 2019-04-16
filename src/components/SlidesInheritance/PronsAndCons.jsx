@@ -1,10 +1,10 @@
 import React from 'react';
-import { Appear, Text, List, ListItem, Image } from 'spectacle';
+import { Appear, Text, List, ListItem, Image, Slide } from 'spectacle';
 import img from './assets/bgjp.png';
 
-const PronsAndCons = () => {
+const PronsAndCons = (props) => {
   return (
-    <div>
+    <Slide {...props}>
       <Text>Плюсы</Text>
       <List>
         <ListItem>Просто</ListItem>
@@ -22,7 +22,7 @@ const PronsAndCons = () => {
           <Image src={img} alt="Banana Gorilla Jungle" width={200} />
         </div>
       </Appear>
-    </div>
+    </Slide>
   );
 };
 

@@ -1,15 +1,15 @@
 import React from 'react';
-import { Heading } from 'spectacle';
+import { Heading, Slide } from 'spectacle';
 import dryBg from './assets/dry.png';
 
 const DRY = () => {
   return (
-    <Heading size={1} caps>
-      DRY
-    </Heading>
+    <Slide bgImage={dryBg}>
+      <Heading size={1} caps>
+        DRY
+      </Heading>
+    </Slide>
   );
 };
-
-DRY.bgImage = dryBg;
 
 export { DRY };

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Deck, Slide } from 'spectacle';
+import { Deck } from 'spectacle';
 import createTheme from 'spectacle/lib/themes/default';
 import SlidesMain from './components/SlidesMain';
 import SlidesReuseComponents from './components/SlidesReuseComponents';
@@ -36,11 +36,7 @@ const theme = createTheme(
 // TODO: ошибка, если обернуть Slide в React.Fragment или другой компонент
 // TypeError: Cannot read property 'componentWillAppear' of undefined
 function renderSlides(slides) {
-  return slides.map((A, key) => (
-    <Slide key={key} bgColor={A.bgColor} bgImage={A.bgImage}>
-      <A />
-    </Slide>
-  ));
+  return slides.map((A, key) => <A key={key} />);
 }
 
 class App extends Component {

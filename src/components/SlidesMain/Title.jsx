@@ -1,16 +1,16 @@
 import React from 'react';
-import { Heading } from 'spectacle';
+import { Heading, Slide } from 'spectacle';
 
 const Title = () => {
   return (
-    <div>
+    <Slide>
       <Heading size={1} caps>
         React
       </Heading>
       <Heading size={1} fit caps>
         Разделение и переиспользование кода
       </Heading>
-    </div>
+    </Slide>
   );
 };
 

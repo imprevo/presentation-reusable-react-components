@@ -1,11 +1,11 @@
 import React from 'react';
-import { Heading } from 'spectacle';
+import { Heading, Slide } from 'spectacle';
 
 const Final = () => {
   return (
-    <div>
+    <Slide>
       <Heading>Fin!</Heading>
-    </div>
+    </Slide>
   );
 };
 

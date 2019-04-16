@@ -1,4 +1,5 @@
 import React from 'react';
+import { Slide } from 'spectacle';
 import { MyComponent1 } from '../MyComponent1';
 import { MyComponent2 } from '../MyComponent2';
 import { Columns } from '../Columns';
@@ -24,6 +25,10 @@ const list = [
   },
 ];
 
-const Demo1 = () => <Columns list={list} />;
+const Demo1 = () => (
+  <Slide>
+    <Columns list={list} />
+  </Slide>
+);
 
 export { Demo1 };

@@ -1,9 +1,9 @@
 import React from 'react';
-import { Heading, List, ListItem } from 'spectacle';
+import { Heading, List, ListItem, Slide } from 'spectacle';
 
 const TaskList = () => {
   return (
-    <React.Fragment>
+    <Slide>
       <Heading>Задание</Heading>
       <List>
         <ListItem>Координаты курсора мыши - x, y, mouseMove</ListItem>
@@ -17,7 +17,7 @@ const TaskList = () => {
           onChange
         </ListItem>
       </List>
-    </React.Fragment>
+    </Slide>
   );
 };
 

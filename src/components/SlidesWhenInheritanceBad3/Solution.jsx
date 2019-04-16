@@ -1,9 +1,9 @@
 import React from 'react';
-import { Appear, Code, Text } from 'spectacle';
+import { Appear, Code, Text, Slide } from 'spectacle';
 
-const Solution = () => {
+const Solution = (props) => {
   return (
-    <div>
+    <Slide {...props}>
       <Text>
         Наследуемся от компонента из HoC, а не от <Code>BaseComponent</Code>
       </Text>
@@ -20,7 +20,7 @@ const Solution = () => {
           </Text>
         </div>
       </Appear>
-    </div>
+    </Slide>
   );
 };
 

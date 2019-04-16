@@ -1,9 +1,9 @@
 import React from 'react';
-import { Heading, List, ListItem } from 'spectacle';
+import { Heading, List, ListItem, Slide } from 'spectacle';
 
 const LibraryList = () => {
   return (
-    <div>
+    <Slide>
       <Heading>Библиотеки</Heading>
       <List>
         <ListItem>connect из react-redux</ListItem>
@@ -15,7 +15,7 @@ const LibraryList = () => {
           SortableContainer, SortableElement из react-sortable-hoc
         </ListItem>
       </List>
-    </div>
+    </Slide>
   );
 };
 

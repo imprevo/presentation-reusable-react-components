@@ -1,11 +1,13 @@
 import React from 'react';
-import { Heading } from 'spectacle';
+import { Heading, Slide } from 'spectacle';
 
 const SOLID = () => {
   return (
-    <Heading size={1} caps>
-      <u>S</u>OLID
-    </Heading>
+    <Slide>
+      <Heading size={1} caps>
+        <u>S</u>OLID
+      </Heading>
+    </Slide>
   );
 };
 

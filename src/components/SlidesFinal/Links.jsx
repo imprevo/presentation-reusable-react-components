@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heading, List, ListItem, Link } from 'spectacle';
+import { Heading, List, ListItem, Link, Slide } from 'spectacle';
 
 const CustomLink = ({ href, children, ...props }) => (
   <Link href={href} target="_blank" {...props}>
@@ -9,7 +9,7 @@ const CustomLink = ({ href, children, ...props }) => (
 
 const Links = () => {
   return (
-    <div>
+    <Slide>
       <Heading size={3} caps textColor="tertiary">
         Полезные ссылки
       </Heading>
@@ -35,7 +35,7 @@ const Links = () => {
           </CustomLink>
         </ListItem>
       </List>
-    </div>
+    </Slide>
   );
 };
 

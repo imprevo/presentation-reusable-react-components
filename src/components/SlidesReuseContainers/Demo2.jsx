@@ -1,4 +1,5 @@
 import React from 'react';
+import { Slide } from 'spectacle';
 import { Container1 } from './samples/Container1';
 import { Container2 } from './samples/Container2';
 import { Columns } from '../Columns';
@@ -8,6 +9,10 @@ const list = [
   { title: 'Container2', body: <Container2 /> },
 ];
 
-const Demo2 = () => <Columns list={list} />;
+const Demo2 = () => (
+  <Slide>
+    <Columns list={list} />
+  </Slide>
+);
 
 export { Demo2 };

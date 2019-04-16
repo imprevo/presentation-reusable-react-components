@@ -1,4 +1,5 @@
 import React from 'react';
+import { Slide } from 'spectacle';
 import { FormFields } from './samples/FormFields4';
 import { Columns } from '../Columns';
 
@@ -12,6 +13,10 @@ const list = [
   },
 ];
 
-const Demo4 = () => <Columns list={list} />;
+const Demo4 = () => (
+  <Slide>
+    <Columns list={list} />
+  </Slide>
+);
 
 export { Demo4 };
