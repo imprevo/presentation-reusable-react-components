@@ -10,8 +10,11 @@ import SlidesInheritance from './components/SlidesInheritance';
 import SlidesHoc from './components/SlidesHoc';
 import SlidesRenderProps from './components/SlidesRenderProps';
 import SlidesFinal from './components/SlidesFinal';
-import SlidesWhyInheritanceBad from './components/SlidesWhyInheritanceBad';
-import SlidesWhyHocGood from './components/SlidesWhyHocGood';
+import SlidesWhenInheritanceBad from './components/SlidesWhenInheritanceBad';
+import SlidesWhenInheritanceBad2 from './components/SlidesWhenInheritanceBad2';
+import SlidesWhenInheritanceBad3 from './components/SlidesWhenInheritanceBad3';
+import SlidesWhenInheritanceIsOnlyWayButStillBad from './components/SlidesWhenInheritanceIsOnlyWayButStillBad';
+import SlidesWhenHocGood from './components/SlidesWhenHocGood';
 
 const theme = createTheme(
   {
@@ -34,7 +37,7 @@ const theme = createTheme(
 // TypeError: Cannot read property 'componentWillAppear' of undefined
 function renderSlides(slides) {
   return slides.map((A, key) => (
-    <Slide key={key} bgImage={A.bgImage}>
+    <Slide key={key} bgColor={A.bgColor} bgImage={A.bgImage}>
       <A />
     </Slide>
   ));
@@ -55,8 +58,11 @@ class App extends Component {
         {renderSlides(SlidesHoc)}
         {renderSlides(SlidesRenderProps)}
 
-        {renderSlides(SlidesWhyInheritanceBad)}
-        {renderSlides(SlidesWhyHocGood)}
+        {renderSlides(SlidesWhenInheritanceBad)}
+        {renderSlides(SlidesWhenInheritanceBad2)}
+        {renderSlides(SlidesWhenInheritanceBad3)}
+        {renderSlides(SlidesWhenInheritanceIsOnlyWayButStillBad)}
+        {renderSlides(SlidesWhenHocGood)}
 
         {renderSlides(SlidesFinal)}
       </Deck>
