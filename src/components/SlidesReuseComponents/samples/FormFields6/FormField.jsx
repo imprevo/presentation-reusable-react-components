@@ -24,8 +24,10 @@ class FormField extends React.Component {
     const { name, options } = this.props;
     return (
       <select id={name} name={name}>
-        {options.map(({ label, value }) => (
-          <option value={value}>{label}</option>
+        {options.map(({ label, value }, key) => (
+          <option key={key} value={value}>
+            {label}
+          </option>
         ))}
       </select>
     );

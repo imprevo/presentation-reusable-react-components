@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, List, ListItem } from 'spectacle';
+import { Appear, Text, List, ListItem } from 'spectacle';
 
 const PronsAndCons = () => {
   return (
@@ -10,14 +10,18 @@ const PronsAndCons = () => {
         <ListItem>Нет коллизии props</ListItem>
         <ListItem>Легко типизировать</ListItem>
       </List>
-      <Text>Минусы</Text>
-      <List>
-        <ListItem>
-          Для использования LifeCycle методов нужен дополнительный компонент
-        </ListItem>
-        <ListItem>На каждый render создается новая функция</ListItem>
-        <ListItem>Callback Hell</ListItem>
-      </List>
+      <Appear>
+        <div>
+          <Text>Минусы</Text>
+          <List>
+            <ListItem>
+              Для использования LifeCycle методов нужен дополнительный компонент
+            </ListItem>
+            <ListItem>На каждый render создается новая функция</ListItem>
+            <ListItem>Callback Hell</ListItem>
+          </List>
+        </div>
+      </Appear>
     </div>
   );
 };

@@ -1,19 +1,25 @@
 import React from 'react';
-import { Text } from 'spectacle';
+import { Appear, Code, Text } from 'spectacle';
 
 const Solution = () => {
   return (
     <div>
       <Text>
-        Наследуемся от компонента из HoC, а не от <code>BaseComponent</code>
+        Наследуемся от компонента из HoC, а не от <Code>BaseComponent</Code>
       </Text>
-      <Text>А как фиксить?</Text>
-      <Text>
-        <b>НИКАК</b>
-      </Text>
-      <Text>
-        Доступ к <code>BaseComponent</code> больше <u>невозможен</u>
-      </Text>
+      <Appear>
+        <Text>А как фиксить?</Text>
+      </Appear>
+      <Appear>
+        <div>
+          <Text>
+            <b>НИКАК</b>
+          </Text>
+          <Text>
+            Доступ к <Code>BaseComponent</Code> больше <u>невозможен</u>
+          </Text>
+        </div>
+      </Appear>
     </div>
   );
 };

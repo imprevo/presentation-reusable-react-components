@@ -16,8 +16,10 @@ class FormFields extends React.Component {
       case 'select':
         input = (
           <select id={name} name={name}>
-            {options.map(({ label, value }) => (
-              <option value={value}>{label}</option>
+            {options.map(({ label, value }, key) => (
+              <option key={key} value={value}>
+                {label}
+              </option>
             ))}
           </select>
         );

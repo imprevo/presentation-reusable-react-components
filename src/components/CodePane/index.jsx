@@ -10,6 +10,7 @@ const CodePane = (props) => (
 CodePane.defaultProps = {
   lang: 'jsx',
   theme: 'external',
+  textSize: 14,
 };
 
 export { CodePane };
